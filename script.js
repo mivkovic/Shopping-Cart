@@ -160,7 +160,7 @@
         result += `<p class='sh'>Shopping List</p>`;
         cart.forEach((val) => {
           result += `<li>
-                      <img class='fruit-img' src='${val.name}.png'>
+                      <img class='fruit-img' src='/${val.name}.png'>
                       <h3 class='nm'>${val.name}</h3>
                       <p>Price: $${val.price}</p>
                       <p>Count: ${val.count}</p>
