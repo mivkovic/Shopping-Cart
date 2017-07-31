@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>web cart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/292879a63f.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='main.css'></link>
+  </head>
+
+  <body>
+
+      <header>
+        <div class="wrapper">
+          <ul class="header-content">
+            <li>
+              <i class="fa fa-search search" aria-hidden="true"></i>
+              <input class='search-bar' type="text">
+            </li>
+            <li>
+              <i class="fa fa-shopping-cart cartBtn" aria-hidden="true"></i>
+              <i class="fa fa-circle circle" aria-hidden="true"></i>
+              <ul class='output'>
+                <p class='sh'>Shopping List</p>
+                <p class='empty'>Empty cart</p>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="cartList">
+        <div class="wrapper">
+          <h1>Shopping List</h1>
+
+          <ul>
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                    <img src="img/Strawberry.png" alt="">
+                </div>
+                <h2>Strawberry</h2>
+                <h4>Price: $1.2</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value="Add" class='add' data-name='Strawberry' data-price='1.2'></input>
+                </div>
+              </div>
+            </li>
+
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                  <img src="img/Blackberry.png" alt="">
+                </div>
+                <h2>Blackberry</h2>
+                <h4>Price: $1.4</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value="Add" class='add' data-name='Blackberry' data-price='1.4'></input>
+                </div>
+              </div>
+            </li>
+
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                  <img src="img/Raspberry.png" alt="">
+                </div>
+                <h2>Raspberry</h2>
+                <h4>Price: $0.8</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value='Add' class='add' data-name='Raspberry' data-price='0.8'></input>
+                </div>
+              </div>
+            </li>
+
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                  <img src="img/Cherry.png" alt="">
+                </div>
+                <h2>Cherry</h2>
+                <h4>Price: $2.2</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value='Add' class='add' data-name='Cherry' data-price='2.2'></input>
+                </div>
+              </div>
+            </li>
+
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                  <img src="img/Blueberry.png" alt="">
+                </div>
+                <h2>Blueberry</h2>
+                <h4>Price: $4.2</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value='Add' class='add' data-name='Blueberry' data-price='4.2'></input>
+                </div>
+              </div>
+            </li>
+
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                  <img src="img/Aronia.png" alt="">
+                </div>
+                <h2>Aronia</h2>
+                <h4>Price: $0.8</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value='Add' class='add' data-name='Aronia' data-price='0.8'></input>
+                </div>
+              </div>
+            </li>
+
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                  <img src="img/Lingonberry.png" alt="">
+                </div>
+                <h2>Lingonberry</h2>
+                <h4>Price: $2.2</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value='Add' class='add' data-name='Lingonberry' data-price='2.2'></input>
+                </div>
+              </div>
+            </li>
+
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                  <img src="img/Cranberry.png" alt="">
+                </div>
+                <h2>Cranberry</h2>
+                <h4>Price: $4.2</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value='Add' class='add' data-name='Cranberry' data-price='4.2'></input>
+                </div>
+              </div>
+            </li>
+
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                  <img src="img/Orange.png" alt="">
+                </div>
+                <h2>Orange</h2>
+                <h4>Price: $3.1</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value='Add' class='add' data-name='Orange' data-price='3.1'></input>
+                </div>
+              </div>
+            </li>
+
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                  <img src="img/Pineapple.png" alt="">
+                </div>
+                <h2>Pineapple</h2>
+                <h4>Price: $6</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value='Add' class='add' data-name='Pineapple' data-price='6'></input>
+                </div>
+              </div>
+            </li>
+
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                  <img src="img/Apricot.png" alt="">
+                </div>
+                <h2>Apricot</h2>
+                <h4>Price: $1.7</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value='Add' class='add' data-name='Apricot' data-price='1.7'></input>
+                </div>
+              </div>
+            </li>
+
+            <li class='cart'>
+              <div class="cart-content">
+                <div class="image">
+                  <img src="img/Avocado.png" alt="">
+                </div>
+                <h2>Avocado</h2>
+                <h4>Price: $3.7</h4>
+                <div class="counting">
+                  <input type="number" class='number' value='1' min='1'>
+                  <input type='button' value='Add' class='add' data-name='Avocado' data-price='3.7'></input>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="table ">
+            <div class="buyTable">
+              <a href="#" class='exit-table'>X</a>
+              <h1>Type your name:</h1>
+              <div class="save-content">
+                <span class='err'></span>
+                <input type="text" class='customer'>
+                <input type='button' value='Save' class='save'></input>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+  <script src='script.js'></script>
+  </body>
+</html>
