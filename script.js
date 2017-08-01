@@ -184,7 +184,7 @@ var app = function () {
 
   function handlers() {
 
-    searchBar.on('keyup', searching);
+    searchBar.on('input', searching);
 
     form.on('submit', loadCart);
 
