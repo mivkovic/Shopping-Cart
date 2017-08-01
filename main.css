@@ -55,7 +55,9 @@ header {
         border-bottom: 1px solid #e0700d;
         color: #f59c17;
         font-weight: 400;
-        font-size: 18px; }
+        font-size: 18px;
+        margin-left: 10px;
+        }
         header .header-content li .search-bar.open {
           width: 150px;
           border-bottom: 1px solid #e0700d; }
